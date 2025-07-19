@@ -1,0 +1,77 @@
+2025-07-14 16:39:49 info: Database connection has been established successfully.
+2025-07-14 16:39:49 info: ✅ stripe_customer_id column ensured
+2025-07-14 16:39:49 info: Server running in development mode on port 8888
+2025-07-14 16:48:38 error: Unable to connect to the database: database "websitebanhangmini1" does not exist
+2025-07-14 16:49:19 info: Database connection has been established successfully.
+2025-07-14 16:49:19 info: Database tables created successfully.
+2025-07-14 16:49:19 info: Database models synchronized successfully.
+2025-07-14 16:49:19 info: ✅ stripe_customer_id column ensured
+2025-07-14 16:50:37 info: Database connection has been established successfully.
+2025-07-14 16:50:37 info: Database tables created successfully.
+2025-07-14 16:50:37 info: Database models synchronized successfully.
+2025-07-14 16:50:37 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:23:31 info: Database connection has been established successfully.
+2025-07-14 20:23:31 info: Database tables created successfully.
+2025-07-14 20:23:31 info: Database models synchronized successfully.
+2025-07-14 20:23:31 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:24:35 info: Database connection has been established successfully.
+2025-07-14 20:24:36 info: Database tables created successfully.
+2025-07-14 20:24:36 info: Database models synchronized successfully.
+2025-07-14 20:24:36 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:24:36 info: Server running in development mode on port 8888
+2025-07-14 20:28:16 info: Database connection has been established successfully.
+2025-07-14 20:28:16 info: Database connection has been established successfully.
+2025-07-14 20:28:16 error: Unable to connect to the database: Validation error
+2025-07-14 20:28:16 info: Database tables created successfully.
+2025-07-14 20:28:16 info: Database models synchronized successfully.
+2025-07-14 20:28:16 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:28:16 info: Server running in development mode on port 8888
+2025-07-14 20:28:17 info: Database connection has been established successfully.
+2025-07-14 20:28:17 info: Database connection has been established successfully.
+2025-07-14 20:28:17 error: Unable to connect to the database: Validation error
+2025-07-14 20:28:17 info: Database tables created successfully.
+2025-07-14 20:28:17 info: Database models synchronized successfully.
+2025-07-14 20:28:17 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:28:17 info: Server running in development mode on port 8888
+2025-07-14 20:34:53 info: Database connection has been established successfully.
+2025-07-14 20:34:53 info: Database connection has been established successfully.
+2025-07-14 20:34:54 error: Unable to connect to the database: Validation error
+2025-07-14 20:34:54 info: Database tables created successfully.
+2025-07-14 20:34:54 info: Database models synchronized successfully.
+2025-07-14 20:34:54 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:34:54 info: Server running in development mode on port 8888
+2025-07-14 20:34:56 info: Database connection has been established successfully.
+2025-07-14 20:34:56 info: Database connection has been established successfully.
+2025-07-14 20:34:56 error: Unable to connect to the database: Validation error
+2025-07-14 20:34:56 info: Database tables created successfully.
+2025-07-14 20:34:56 info: Database models synchronized successfully.
+2025-07-14 20:34:56 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:34:56 info: Server running in development mode on port 8888
+2025-07-14 20:34:58 info: Database connection has been established successfully.
+2025-07-14 20:34:58 info: Database connection has been established successfully.
+2025-07-14 20:34:58 error: Unable to connect to the database: Validation error
+2025-07-14 20:34:58 info: Database tables created successfully.
+2025-07-14 20:34:58 info: Database models synchronized successfully.
+2025-07-14 20:34:58 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:34:58 info: Server running in development mode on port 8888
+2025-07-14 20:35:03 info: Database connection has been established successfully.
+2025-07-14 20:35:03 info: Database connection has been established successfully.
+2025-07-14 20:35:03 error: Unable to connect to the database: Validation error
+2025-07-14 20:35:03 info: Database tables created successfully.
+2025-07-14 20:35:03 info: Database models synchronized successfully.
+2025-07-14 20:35:03 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:35:03 info: Server running in development mode on port 8888
+2025-07-14 20:35:08 info: Database connection has been established successfully.
+2025-07-14 20:35:08 info: Database connection has been established successfully.
+2025-07-14 20:35:08 error: Unable to connect to the database: Validation error
+2025-07-14 20:35:08 info: Database tables created successfully.
+2025-07-14 20:35:08 info: Database models synchronized successfully.
+2025-07-14 20:35:08 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:35:08 info: Server running in development mode on port 8888
+2025-07-14 20:35:09 info: Database connection has been established successfully.
+2025-07-14 20:35:09 info: Database connection has been established successfully.
+2025-07-14 20:35:09 error: Unable to connect to the database: Validation error
+2025-07-14 20:35:09 info: Database tables created successfully.
+2025-07-14 20:35:09 info: Database models synchronized successfully.
+2025-07-14 20:35:09 info: ✅ stripe_customer_id column ensured
+2025-07-14 20:35:09 info: Server running in development mode on port 8888

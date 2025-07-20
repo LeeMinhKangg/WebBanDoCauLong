@@ -7,7 +7,7 @@ const categorySchema = Joi.object({
     'any.required': 'Tên danh mục là trường bắt buộc',
   }),
   description: Joi.string().allow('').optional(),
-  image: Joi.string().allow('').optional(),
+  image: Joi.string().allow('', null).optional(),
   parentId: Joi.string().uuid().allow(null).optional(),
   isActive: Joi.boolean().default(true),
   sortOrder: Joi.number().integer().default(0),

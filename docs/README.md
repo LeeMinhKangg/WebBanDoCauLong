@@ -1,12 +1,12 @@
-# 📚 Tài Liệu Hướng Dẫn Website Bán Hàng Mini
+# 📚 Tài Liệu Hướng Dẫn Website Bán Đồ Cầu Lông
 
 ## 👋 Giới Thiệu
 
-Chào mừng bạn đến với tài liệu hướng dẫn cho **Website Bán Hàng Mini**! Đây là bộ source code e-commerce hoàn chỉnh, được xây dựng với các công nghệ hiện đại nhất, giúp bạn nhanh chóng triển khai một website bán hàng chuyên nghiệp.
+Chào mừng bạn đến với tài liệu hướng dẫn cho **Website Bán Đồ Cầu Lông**! Đây là bộ source code e-commerce hoàn chỉnh, được xây dựng với các công nghệ hiện đại nhất, giúp bạn nhanh chóng triển khai một website bán hàng chuyên nghiệp.
 
 ## 📋 Nội Dung
 
-Tài liệu này bao gồm các hướng dẫn chi tiết để giúp bạn cài đặt, cấu hình và sử dụng Website Bán Hàng Mini:
+Tài liệu này bao gồm các hướng dẫn chi tiết để giúp bạn cài đặt, cấu hình và sử dụng Website Bán Đồ Cầu Lông:
 
 1. [Hướng Dẫn Cài Đặt](./INSTALLATION_GUIDE.md) - Cài đặt frontend, backend và database
 2. [Cấu Trúc Dự Án](./PROJECT_STRUCTURE.md) - Mô tả chi tiết cấu trúc thư mục và files
@@ -158,4 +158,4 @@ Xem hướng dẫn xử lý sự cố trong [INSTALLATION_GUIDE.md](./INSTALLATI
 
 ---
 
-_© 2025 Website Bán Hàng Mini - Giải pháp e-commerce toàn diện_
+_© 2025 Website Bán Đồ Cầu Lông - Giải pháp e-commerce toàn diện_

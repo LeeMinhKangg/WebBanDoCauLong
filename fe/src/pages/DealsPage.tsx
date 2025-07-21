@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useGetDealsQuery } from '@/services/productApi';
 import ProductCard from '@/components/features/ProductCard';
 import ProductListCard from '@/components/features/ProductListCard';
@@ -8,6 +9,7 @@ import Pagination from '@/components/common/Pagination';
 import { Product } from '@/types/product.types';
 
 const DealsPage: React.FC = () => {
+  const { t } = useTranslation();
   const [sortOption, setSortOption] = useState('discount_desc');
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
 
@@ -59,11 +61,12 @@ const DealsPage: React.FC = () => {
     });
   }, [dealsData]);
 
+  // Dynamic sort options with translations
   const sortOptions = [
-    { value: 'discount_desc', label: 'Giảm giá cao nhất' },
-    { value: 'price_asc', label: 'Giá: Thấp đến cao' },
-    { value: 'price_desc', label: 'Giá: Cao đến thấp' },
-    { value: 'newest', label: 'Mới nhất' },
+    { value: 'discount_desc', label: t('deals.sortOptions.discountDesc') },
+    { value: 'price_asc', label: t('deals.sortOptions.priceAsc') },
+    { value: 'price_desc', label: t('deals.sortOptions.priceDesc') },
+    { value: 'newest', label: t('deals.sortOptions.newest') },
   ];
 
   const handleSortChange = (value: string) => {
@@ -82,11 +85,10 @@ const DealsPage: React.FC = () => {
     return (
       <div className="container mx-auto px-4 py-16 text-center">
         <h1 className="text-2xl font-bold text-red-600 mb-4">
-          Lỗi khi tải sản phẩm giảm giá
+          {t('deals.errorLoading')}
         </h1>
         <p className="text-neutral-600 dark:text-neutral-400">
-          Đã xảy ra lỗi khi tải danh sách sản phẩm giảm giá. Vui lòng thử lại
-          sau.
+          {t('deals.errorMessage')}
         </p>
       </div>
     );
@@ -98,14 +100,13 @@ const DealsPage: React.FC = () => {
         {/* Hero section */}
         <div className="bg-gradient-to-r from-primary-600 to-secondary-500 rounded-xl p-8 mb-8 text-white text-center">
           <h1 className="text-4xl font-bold mb-4">
-            Siêu Giảm Giá - Trên 50% OFF
+            {t('deals.title')}
           </h1>
           <p className="text-lg max-w-2xl mx-auto mb-6">
-            Khám phá các sản phẩm giảm giá sốc với mức giảm trên 50%. Cơ hội có
-            hạn, mua ngay kẻo lỡ!
+            {t('deals.subtitle')}
           </p>
           <div className="inline-block bg-white text-primary-600 font-bold py-3 px-6 rounded-full text-lg">
-            GIẢM GIÁ TRÊN 50%
+            {t('deals.badge')}
           </div>
         </div>
 
@@ -113,8 +114,8 @@ const DealsPage: React.FC = () => {
         <div className="mb-8 text-center">
           <p className="text-neutral-600 dark:text-neutral-400 text-lg">
             {formattedProducts.length > 0
-              ? `Hiển thị ${formattedProducts.length} sản phẩm giảm giá trên 50%`
-              : 'Khám phá các sản phẩm giảm giá sốc'}
+              ? t('deals.showingProducts', { count: formattedProducts.length })
+              : t('deals.discoverDeals')}
           </p>
         </div>
 
@@ -177,7 +178,7 @@ const DealsPage: React.FC = () => {
               options={sortOptions}
               value={sortOption}
               onChange={handleSortChange}
-              placeholder="Sắp xếp theo"
+              placeholder={t('deals.sortBy')}
             />
           </div>
         </div>
@@ -200,10 +201,10 @@ const DealsPage: React.FC = () => {
               />
             </svg>
             <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-              Không có sản phẩm giảm giá trên 50%
+              {t('deals.noProducts')}
             </h3>
             <p className="text-neutral-500 dark:text-neutral-400 mb-6">
-              Vui lòng quay lại sau để xem các ưu đãi mới
+              {t('deals.comeBackLater')}
             </p>
           </div>
         ) : (

@@ -208,9 +208,7 @@ const CreateProductWizard: React.FC<CreateProductWizardProps> = ({
         newErrors.name = 'Vui lòng nhập tên sản phẩm';
       }
 
-      if (!formData.sku.trim()) {
-        newErrors.sku = 'Vui lòng nhập mã SKU';
-      }
+      // SKU là tùy chọn, backend sẽ tự động tạo nếu để trống
 
       if (!formData.shortDescription.trim()) {
         newErrors.shortDescription = 'Vui lòng nhập mô tả ngắn';
@@ -265,9 +263,7 @@ const CreateProductWizard: React.FC<CreateProductWizardProps> = ({
       newErrors.stock = 'Số lượng tồn kho không được âm';
     }
 
-    if (!formData.sku.trim()) {
-      newErrors.sku = 'Vui lòng nhập mã SKU';
-    }
+    // SKU là tùy chọn, backend sẽ tự động tạo nếu để trống
 
     if (formData.categoryIds.length === 0) {
       newErrors.categoryIds = 'Vui lòng chọn ít nhất một danh mục';

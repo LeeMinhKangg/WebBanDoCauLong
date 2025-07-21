@@ -171,9 +171,7 @@ const CreateProductForm: React.FC<CreateProductFormProps> = ({
       newErrors.stock = 'Số lượng tồn kho không được âm';
     }
 
-    if (!formData.sku.trim()) {
-      newErrors.sku = 'Vui lòng nhập mã SKU';
-    }
+    // SKU là tùy chọn, backend sẽ tự động tạo nếu để trống
 
     if (formData.categoryIds.length === 0) {
       newErrors.categoryIds = 'Vui lòng chọn ít nhất một danh mục';

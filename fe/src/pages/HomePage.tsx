@@ -18,6 +18,7 @@ import {
 } from '@/utils/imageUtils';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Product } from '@/types/product.types';
 
 /**
  * HomePage component - Main landing page with hero, featured products, and categories
@@ -109,7 +110,7 @@ const HomePage: React.FC = () => {
           />
         ) : (
           <ProductGrid>
-            {featuredProducts.data?.data?.map((product) => (
+            {featuredProducts.data?.data?.map((product: Product) => (
               <ProductCard key={product.id} {...product} />
             ))}
           </ProductGrid>

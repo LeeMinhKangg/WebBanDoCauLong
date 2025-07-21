@@ -66,7 +66,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           )}
           {isNew && (
             <div className="bg-gradient-to-r from-emerald-500 via-emerald-600 to-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded-xl shadow-xl backdrop-blur-sm border border-white/20">
-              <span className="drop-shadow-sm">MỚI</span>
+              <span className="drop-shadow-sm">{t('product.new')}</span>
             </div>
           )}
         </div>
@@ -138,7 +138,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
             {compareAtPrice && compareAtPrice > priceInfo.basePrice && (
               <div className="flex items-center gap-2">
                 <span className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold">
-                  Tiết kiệm{' '}
+                  {t('product.save')}{' '}
                   {(compareAtPrice - priceInfo.basePrice).toLocaleString(
                     'vi-VN'
                   )}
@@ -146,7 +146,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 </span>
                 <div className="h-1 w-1 bg-neutral-300 dark:bg-neutral-600 rounded-full"></div>
                 <span className="text-sm text-emerald-600 dark:text-emerald-400 font-semibold">
-                  {discount}% OFF
+                  {discount}% {t('product.off')}
                 </span>
               </div>
             )}
@@ -177,7 +177,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
               />
             </svg>
-            <span className="whitespace-nowrap">XEM CHI TIẾT</span>
+            <span className="whitespace-nowrap">{t('product.viewDetails').toUpperCase()}</span>
           </button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "header": {
-    "brand": "ShopMini",
+    "brand": "BadmintonShop",
     "navigation": {
       "home": "Trang chủ",
       "shop": "Cửa hàng",
@@ -43,19 +43,19 @@
       "imageAlt": "Trung tâm mua sắm hiện đại với nhiều người",
       "slides": {
         "shopping": {
-          "title": "Khám phá thế giới mua sắm",
-          "subtitle": "Hàng ngàn sản phẩm chất lượng cao với giá tốt nhất",
-          "badge": "🔥 Xu hướng 2024"
+          "title": "Cửa Hàng Cầu Lông Hàng Đầu",
+          "subtitle": "Vợt cầu lông chính hãng, phụ kiện đa dạng với giá tốt nhất",
+          "badge": "🏸 Thương hiệu uy tín"
         },
         "fashion": {
-          "title": "Thời trang hiện đại",
-          "subtitle": "Bộ sưu tập mới nhất từ các thương hiệu hàng đầu",
-          "badge": "✨ Bộ sưu tập mới"
+           "title": "Công Nghệ Vợt Cầu Lông",
+          "subtitle": "Vợt carbon cao cấp, công nghệ mới nhất từ Yonex, Victor",
+          "badge": "⚡ Công nghệ tiên tiến"
         },
         "technology": {
-          "title": "Công nghệ tiên tiến",
-          "subtitle": "Những sản phẩm công nghệ mới nhất và hiện đại nhất",
-          "badge": "🚀 Công nghệ mới"
+          "title": "Phụ Kiện Thể Thao",
+          "subtitle": "Áo quần, Giầy cầu lông chuyên nghiệp, thoải mái và bền đẹp",
+          "badge": "👕 Chất lượng cao"
         }
       },
       "buttons": {
@@ -97,12 +97,12 @@
     },
     "promotion": {
       "badge": "Ưu Đãi Có Thời Hạn",
-      "title": "Giảm 20% Cho Tất Cả Hàng Mới Về",
-      "description": "Khám phá bộ sưu tập mới nhất của chúng tôi và tận hưởng giảm giá độc quyền trên các mặt hàng được chọn. Sử dụng mã khuyến mãi",
-      "promoCode": "NEWSEASON",
+      "title": "Giảm 20% Cho Tất Cả Vợt Mới Về",
+      "description": "Khám phá bộ sưu tập vợt cầu lông mới nhất và nhận ngay ưu đãi đặc biệt khi mua hàng. Sử dụng mã khuyến mãi",
+      "promoCode": "VOTMOI20",
       "atCheckout": "khi thanh toán.",
-      "shopNewArrivals": "Mua Hàng Mới Về",
-      "imageAlt": "Ưu đãi đặc biệt - Phụ nữ với túi mua sắm"
+      "shopNewArrivals": "Mua Vợt Mới Về",
+      "imageAlt": "Ưu đãi đặc biệt - Người chơi cầu lông với vợt mới"
     },
     "newsletter": {
       "title": "Đăng Ký Nhận Bản Tin",
@@ -657,7 +657,170 @@
     "addedToCart": "Đã thêm vào giỏ hàng",
     "quantity": "Số Lượng",
     "selectVariant": "Chọn Phiên Bản",
-    "relatedProducts": "Sản Phẩm Liên Quan"
+    "relatedProducts": "Sản Phẩm Liên Quan",
+    "new": "MỚI",
+    "save": "Tiết kiệm",
+    "off": "OFF"
+  },
+  "shop": {
+    "title": "Cửa Hàng Sản Phẩm",
+    "description": "Khám phá bộ sưu tập sản phẩm của chúng tôi",
+    "showingProducts": "Hiển thị {{showing}} trong tổng số {{total}} sản phẩm",
+    "viewMode": "Chế độ xem",
+    "sortBy": "Sắp xếp theo",
+    "filters": "Bộ lọc sản phẩm",
+    "noProductsFound": "Không tìm thấy sản phẩm nào",
+    "tryAdjustFilters": "Thử điều chỉnh bộ lọc hoặc từ khóa tìm kiếm",
+    "clearFilters": "Xóa bộ lọc",
+    "sort": {
+      "newest": "Mới nhất",
+      "priceAsc": "Giá: Thấp đến Cao",
+      "priceDesc": "Giá: Cao đến Thấp",
+      "popular": "Phổ biến"
+    },
+    "filter": {
+      "priceRange": "Khoảng Giá",
+      "categories": "Danh mục",
+      "applyPriceRange": "Áp dụng khoảng giá",
+      "clearAllFilters": "Xóa tất cả bộ lọc",
+      "minimum": "Tối thiểu (VND)",
+      "maximum": "Tối đa (VND)",
+      "closeFilter": "Đóng bộ lọc",
+      "pricePresets": {
+        "under100k": "Dưới 100K",
+        "100k500k": "100K - 500K",
+        "500k1m": "500K - 1M",
+        "1m5m": "1M - 5M",
+        "5m10m": "5M - 10M",
+        "over10m": "Trên 10M"
+      }
+    }
+  },
+  "footer": {
+    "companyDescription": "Điểm đến một cửa cho các sản phẩm chất lượng với giá cả phải chăng. Chúng tôi cam kết cung cấp trải nghiệm mua sắm đặc biệt.",
+    "quickLinks": "Liên kết nhanh",
+    "customerService": "Dịch vụ khách hàng",
+    "contactUs": "Liên hệ chúng tôi",
+    "links": {
+      "home": "Trang chủ",
+      "shop": "Cửa hàng",
+      "categories": "Danh mục",
+      "deals": "Khuyến mãi",
+      "newArrivals": "Hàng mới về",
+      "bestSellers": "Bán chạy nhất",
+      "contactUs": "Liên hệ",
+      "faqs": "Câu hỏi thường gặp",
+      "shippingReturns": "Vận chuyển & Đổi trả",
+      "orderTracking": "Theo dõi đơn hàng",
+      "privacyPolicy": "Chính sách bảo mật",
+      "termsConditions": "Điều khoản & Điều kiện"
+    },
+    "address": "123 Đường Mua sắm, Thành phố Thương mại điện tử, 10001",
+    "workingHours": {
+      "weekdays": "Thứ 2-6: 8AM - 6PM",
+      "weekends": "Thứ 7-CN: 9AM - 4PM"
+    },
+    "copyright": "Tất cả quyền được bảo lưu."
+  },
+  "categories": {
+    "title": "Duyệt Tất Cả Danh Mục",
+    "searchPlaceholder": "Tìm kiếm danh mục...",
+    "errorLoading": "Lỗi Khi Tải Danh Mục",
+    "errorMessage": "Chúng tôi gặp lỗi khi tải danh mục. Vui lòng thử lại sau.",
+    "noCategories": "Không tìm thấy danh mục",
+    "tryDifferentSearch": "Thử từ khóa tìm kiếm khác",
+    "products": "sản phẩm",
+    "productsCount": "{{count}} sản phẩm"
+  },
+  "deals": {
+    "title": "Siêu Giảm Giá - Trên 50% OFF",
+    "subtitle": "Khám phá các sản phẩm giảm giá sốc với mức giảm trên 50%. Cơ hội có hạn, mua ngay kẻo lỡ!",
+    "badge": "GIẢM GIÁ TRÊN 50%",
+    "showingProducts": "Hiển thị {{count}} sản phẩm giảm giá trên 50%",
+    "discoverDeals": "Khám phá các sản phẩm giảm giá sốc",
+    "errorLoading": "Lỗi khi tải sản phẩm giảm giá",
+    "errorMessage": "Đã xảy ra lỗi khi tải danh sách sản phẩm giảm giá. Vui lòng thử lại sau.",
+    "noProducts": "Không có sản phẩm giảm giá trên 50%",
+    "comeBackLater": "Vui lòng quay lại sau để xem các ưu đãi mới",
+    "sortOptions": {
+      "discountDesc": "Giảm giá cao nhất",
+      "priceAsc": "Giá: Thấp đến cao",
+      "priceDesc": "Giá: Cao đến thấp",
+      "newest": "Mới nhất"
+    },
+    "sortBy": "Sắp xếp theo"
+  },
+  "about": {
+    "title": "Giới Thiệu Về BadmintonShop",
+    "subtitle": "Chúng tôi có sứ mệnh cung cấp các sản phẩm chất lượng cao với giá cả phải chăng và dịch vụ khách hàng đặc biệt.",
+    "sections": {
+      "story": {
+        "title": "Câu Chuyện Của Chúng Tôi",
+        "paragraph1": "Được thành lập vào năm 2023, BadmintonShop bắt đầu với một ý tưởng đơn giản: làm cho việc mua sắm trở nên dễ dàng hơn, thú vị hơn và dễ tiếp cận với mọi người. Những gì bắt đầu là một cửa hàng trực tuyến nhỏ đã phát triển thành một nền tảng cung cấp hàng nghìn sản phẩm trong nhiều danh mục.",
+        "paragraph2": "Đội ngũ của chúng tôi đam mê việc tuyển chọn những sản phẩm tốt nhất và tạo ra trải nghiệm mua sắm liền mạch. Chúng tôi cẩn thận lựa chọn từng món hàng trong kho để đảm bảo đáp ứng tiêu chuẩn về chất lượng, giá trị và tính bền vững.",
+        "paragraph3": "Khi chúng tôi tiếp tục phát triển, cam kết về sự hài lòng của khách hàng vẫn là trọng tâm trong mọi việc chúng tôi làm. Chúng tôi không ngừng cải thiện nền tảng, mở rộng dòng sản phẩm và tìm những cách mới để làm hài lòng khách hàng."
+      },
+      "values": {
+        "title": "Giá Trị Của Chúng Tôi",
+        "quality": {
+          "title": "Chất Lượng",
+          "description": "Chúng tôi không bao giờ thỏa hiệp về chất lượng. Mọi sản phẩm chúng tôi cung cấp đều được lựa chọn và kiểm tra cẩn thận để đảm bảo đáp ứng tiêu chuẩn cao của chúng tôi."
+        },
+        "customerFirst": {
+          "title": "Khách Hàng Là Trên Hết",
+          "description": "Khách hàng của chúng tôi là trung tâm của mọi việc chúng tôi làm. Chúng tôi cố gắng cung cấp dịch vụ và hỗ trợ đặc biệt ở mọi bước trong hành trình mua sắm của bạn."
+        },
+        "innovation": {
+          "title": "Đổi Mới",
+          "description": "Chúng tôi liên tục tìm kiếm những cách mới để cải thiện nền tảng và cung cấp các sản phẩm sáng tạo giúp cuộc sống của bạn tốt hơn và thuận tiện hơn."
+        }
+      },
+      "team": {
+        "title": "Đội Ngũ Của Chúng Tôi"
+      },
+      "cta": {
+        "title": "Sẵn Sàng Bắt Đầu Mua Sắm?",
+        "description": "Khám phá dòng sản phẩm đa dạng của chúng tôi và khám phá tại sao hàng nghìn khách hàng chọn BadmintonShop cho nhu cầu mua sắm của họ.",
+        "browseProducts": "Duyệt Sản Phẩm",
+        "contactUs": "Liên Hệ"
+      }
+    }
+  },
+  "profile": {
+    "title": "Hồ Sơ Của Tôi",
+    "personalInfo": "Thông Tin Cá Nhân",
+    "editProfile": "Chỉnh Sửa Hồ Sơ",
+    "changePassword": "Thay Đổi Mật Khẩu",
+    "fields": {
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Địa Chỉ Email",
+      "phone": "Số Điện Thoại",
+      "currentPassword": "Mật Khẩu Hiện Tại",
+      "newPassword": "Mật Khẩu Mới",
+      "confirmPassword": "Xác Nhận Mật Khẩu Mới"
+    },
+    "validation": {
+      "firstNameRequired": "Tên là bắt buộc",
+      "lastNameRequired": "Họ là bắt buộc",
+      "emailRequired": "Email là bắt buộc",
+      "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ",
+      "currentPasswordRequired": "Cần mật khẩu hiện tại để thay đổi mật khẩu",
+      "newPasswordRequired": "Mật khẩu mới là bắt buộc",
+      "passwordMinLength": "Mật khẩu phải có ít nhất 6 ký tự",
+      "confirmPasswordRequired": "Vui lòng xác nhận mật khẩu mới",
+      "passwordsNotMatch": "Mật khẩu không khớp"
+    },
+    "actions": {
+      "cancel": "Hủy",
+      "saveChanges": "Lưu Thay Đổi",
+      "saving": "Đang lưu..."
+    },
+    "messages": {
+      "profileUpdated": "Cập nhật hồ sơ thành công",
+      "passwordChanged": "Thay đổi mật khẩu thành công",
+      "updateFailed": "Cập nhật hồ sơ thất bại"
+    }
   },
   "common": {
     "tryAgain": "Thử Lại",

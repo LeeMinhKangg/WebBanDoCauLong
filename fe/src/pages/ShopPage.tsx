@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ProductCard from '@/components/features/ProductCard';
 import ProductListCard from '@/components/features/ProductListCard';
 import FilterPanel from '@/components/features/FilterPanel';
@@ -13,17 +14,20 @@ import { Category } from '@/types/category.types';
 import { useGetProductsQuery } from '@/services/productApi';
 import { useGetCategoriesQuery } from '@/services/categoryApi';
 
-const sortOptions = [
-  { value: 'newest', label: 'Newest' },
-  { value: 'price_asc', label: 'Price: Low to High' },
-  { value: 'price_desc', label: 'Price: High to Low' },
-  { value: 'popular', label: 'Popularity' },
-];
 
 const ShopPage: React.FC = () => {
+  const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+
+  // Dynamic sort options with translations
+  const sortOptions = [
+    { value: 'newest', label: t('shop.sort.newest') },
+    { value: 'price_asc', label: t('shop.sort.priceAsc') },
+    { value: 'price_desc', label: t('shop.sort.priceDesc') },
+    { value: 'popular', label: t('shop.sort.popular') },
+  ];
 
   // Get filter values from URL
   const categoryId = searchParams.get('category') || undefined;
@@ -155,7 +159,7 @@ const ShopPage: React.FC = () => {
   const filterGroups = [
     {
       id: 'categories',
-      name: 'Danh mục',
+      name: t('shop.filter.categories'),
       options:
         categoriesData?.map((category) => ({
           id: category.id,
@@ -170,12 +174,15 @@ const ShopPage: React.FC = () => {
         {/* Page header */}
         <div className="mb-8 text-center">
           <h1 className="text-4xl font-bold text-neutral-800 dark:text-neutral-100 mb-3">
-            Cửa Hàng Sản Phẩm
+            {t('shop.title')}
           </h1>
           <p className="text-neutral-600 dark:text-neutral-400 text-lg">
             {productsData?.data?.total
-              ? `Hiển thị ${productsData.data.products?.length || 0} trong tổng số ${productsData.data.total} sản phẩm`
-              : 'Khám phá bộ sưu tập sản phẩm của chúng tôi'}
+              ? t('shop.showingProducts', {
+                  showing: productsData.data.products?.length || 0,
+                  total: productsData.data.total
+                })
+              : t('shop.description')}
           </p>
         </div>
 
@@ -188,7 +195,7 @@ const ShopPage: React.FC = () => {
             onClick={() => setIsMobileFilterOpen(true)}
             className="w-full"
           >
-            Bộ lọc sản phẩm
+            {t('shop.filters')}
           </PremiumButton>
         </div>
 
@@ -197,7 +204,7 @@ const ShopPage: React.FC = () => {
           {/* View Mode Toggle - Mobile */}
           <div className="flex items-center justify-between">
             <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
-              Chế độ xem:
+              {t('shop.viewMode')}:
             </span>
             <div className="flex items-center bg-white dark:bg-neutral-800 rounded-lg p-1 border border-neutral-200 dark:border-neutral-700">
               <button
@@ -253,7 +260,7 @@ const ShopPage: React.FC = () => {
             options={sortOptions}
             value={sort || 'newest'}
             onChange={handleSortChange}
-            label="Sắp xếp theo"
+            label={t('shop.sortBy')}
           />
         </div>
 
@@ -292,8 +299,11 @@ const ShopPage: React.FC = () => {
             <div className="hidden lg:flex justify-between items-center mb-6">
               <p className="text-neutral-600 dark:text-neutral-400">
                 {productsData?.data?.total
-                  ? `Hiển thị ${productsData.data.products?.length || 0} trong tổng số ${productsData.data.total} sản phẩm`
-                  : 'Khám phá bộ sưu tập sản phẩm của chúng tôi'}
+                  ? t('shop.showingProducts', {
+                      showing: productsData.data.products?.length || 0,
+                      total: productsData.data.total
+                    })
+                  : t('shop.description')}
               </p>
 
               <div className="flex items-center gap-4">
@@ -352,7 +362,7 @@ const ShopPage: React.FC = () => {
                     options={sortOptions}
                     value={sort || 'newest'}
                     onChange={handleSortChange}
-                    placeholder="Sắp xếp"
+                    placeholder={t('shop.sortBy')}
                   />
                 </div>
               </div>
@@ -381,17 +391,17 @@ const ShopPage: React.FC = () => {
                   />
                 </svg>
                 <h3 className="text-xl font-semibold text-neutral-700 dark:text-neutral-300 mb-2">
-                  No products found
+                  {t('shop.noProductsFound')}
                 </h3>
                 <p className="text-neutral-500 dark:text-neutral-400 mb-6">
-                  Try adjusting your filters or search term
+                  {t('shop.tryAdjustFilters')}
                 </p>
                 <PremiumButton
                   variant="primary"
                   size="large"
                   onClick={handleClearFilters}
                 >
-                  Clear Filters
+                  {t('shop.clearFilters')}
                 </PremiumButton>
               </div>
             ) : (

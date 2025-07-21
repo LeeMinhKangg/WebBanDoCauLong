@@ -1,7 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation();
+  
+  // Dynamic navigation links with translations
+  const quickLinks = [
+    { name: t('footer.links.home'), path: '/' },
+    { name: t('footer.links.shop'), path: '/shop' },
+    { name: t('footer.links.categories'), path: '/categories' },
+    { name: t('footer.links.deals'), path: '/deals' },
+    { name: t('footer.links.newArrivals'), path: '/new-arrivals' },
+    { name: t('footer.links.bestSellers'), path: '/best-sellers' },
+  ];
+
+  const customerServiceLinks = [
+    { name: t('footer.links.contactUs'), path: '/contact' },
+    { name: t('footer.links.faqs'), path: '/faqs' },
+    { name: t('footer.links.shippingReturns'), path: '/shipping-returns' },
+    { name: t('footer.links.orderTracking'), path: '/track-order' },
+    { name: t('footer.links.privacyPolicy'), path: '/privacy-policy' },
+    { name: t('footer.links.termsConditions'), path: '/terms' },
+  ];
+
   return (
     <footer className="bg-neutral-100 dark:bg-neutral-900 pt-12 pb-6">
       <div className="container mx-auto">
@@ -35,12 +57,10 @@ const Footer: React.FC = () => {
           {/* Company info */}
           <div>
             <h4 className="text-neutral-800 dark:text-neutral-100 font-bold text-lg mb-4">
-              ShopMini
+              BadmintonShop
             </h4>
             <p className="text-neutral-600 dark:text-neutral-400 mb-4">
-              Your one-stop destination for quality products at affordable
-              prices. We're committed to providing an exceptional shopping
-              experience.
+              {t('footer.companyDescription')}
             </p>
             <div className="flex space-x-4">
               {/* Social media icons */}
@@ -92,17 +112,10 @@ const Footer: React.FC = () => {
           {/* Quick links */}
           <div>
             <h4 className="text-neutral-800 dark:text-neutral-100 font-bold text-lg mb-4">
-              Quick Links
+              {t('footer.quickLinks')}
             </h4>
             <ul className="space-y-2">
-              {[
-                { name: 'Home', path: '/' },
-                { name: 'Shop', path: '/shop' },
-                { name: 'Categories', path: '/categories' },
-                { name: 'Deals', path: '/deals' },
-                { name: 'New Arrivals', path: '/new-arrivals' },
-                { name: 'Best Sellers', path: '/best-sellers' },
-              ].map((link) => (
+              {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.path}
@@ -118,17 +131,10 @@ const Footer: React.FC = () => {
           {/* Customer service */}
           <div>
             <h4 className="text-neutral-800 dark:text-neutral-100 font-bold text-lg mb-4">
-              Customer Service
+              {t('footer.customerService')}
             </h4>
             <ul className="space-y-2">
-              {[
-                { name: 'Contact Us', path: '/contact' },
-                { name: 'FAQs', path: '/faqs' },
-                { name: 'Shipping & Returns', path: '/shipping-returns' },
-                { name: 'Order Tracking', path: '/track-order' },
-                { name: 'Privacy Policy', path: '/privacy-policy' },
-                { name: 'Terms & Conditions', path: '/terms' },
-              ].map((link) => (
+              {customerServiceLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     to={link.path}
@@ -144,7 +150,7 @@ const Footer: React.FC = () => {
           {/* Contact info */}
           <div>
             <h4 className="text-neutral-800 dark:text-neutral-100 font-bold text-lg mb-4">
-              Contact Us
+              {t('footer.contactUs')}
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start">
@@ -169,7 +175,7 @@ const Footer: React.FC = () => {
                   />
                 </svg>
                 <span className="text-neutral-700 dark:text-neutral-300">
-                  123 Shopping Street, E-commerce City, 10001
+                  {t('footer.address')}
                 </span>
               </li>
               <li className="flex items-start">
@@ -188,7 +194,7 @@ const Footer: React.FC = () => {
                   />
                 </svg>
                 <span className="text-neutral-700 dark:text-neutral-300">
-                  support@shopmini.com
+                  leeminhkang@gmail.com
                 </span>
               </li>
               <li className="flex items-start">
@@ -207,7 +213,7 @@ const Footer: React.FC = () => {
                   />
                 </svg>
                 <span className="text-neutral-700 dark:text-neutral-300">
-                  +1 (555) 123-4567
+                  +84 877748444
                 </span>
               </li>
               <li className="flex items-start">
@@ -226,9 +232,9 @@ const Footer: React.FC = () => {
                   />
                 </svg>
                 <span className="text-neutral-700 dark:text-neutral-300">
-                  Mon-Fri: 9AM - 6PM
+                  {t('footer.workingHours.weekdays')}
                   <br />
-                  Sat-Sun: 10AM - 4PM
+                  {t('footer.workingHours.weekends')}
                 </span>
               </li>
             </ul>
@@ -238,7 +244,7 @@ const Footer: React.FC = () => {
         {/* Bottom footer */}
         <div className="border-t border-neutral-200 dark:border-neutral-800 pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} ShopMini. All rights reserved.
+            &copy; {new Date().getFullYear()} BadmintonShop. {t('footer.copyright')}
           </p>
           <div className="flex items-center flex-wrap justify-center gap-4">
             <img

@@ -1,6 +1,6 @@
 {
   "header": {
-    "brand": "ShopMini",
+    "brand": "BadmintonShop",
     "navigation": {
       "home": "Home",
       "shop": "Shop",
@@ -43,19 +43,19 @@
       "imageAlt": "Modern shopping mall with people",
       "slides": {
         "shopping": {
-          "title": "Discover the shopping world",
-          "subtitle": "Thousands of high-quality products at the best prices",
-          "badge": "🔥 Trend 2024"
+          "title": "Leading Badminton Store",
+          "subtitle": "Genuine rackets and diverse accessories at the best prices",
+          "badge": "🏸 Trusted Brand"
         },
         "fashion": {
-          "title": "Modern fashion",
-          "subtitle": "Latest collections from top brands",
-          "badge": "✨ New collection"
+          "title": "Badminton Racket Technology",
+          "subtitle": "Premium carbon rackets with the latest technology from Yonex, Victor",
+          "badge": "⚡ Advanced Technology"
         },
         "technology": {
-          "title": "Advanced technology",
-          "subtitle": "The latest and most modern technology products",
-          "badge": "🚀 New technology"
+          "title": "Sports Accessories",
+          "subtitle": "Professional badminton clothing and shoes — comfortable and durable",
+          "badge": "👕 High Quality"
         }
       },
       "buttons": {
@@ -657,7 +657,170 @@
     "addedToCart": "Added to cart",
     "quantity": "Quantity",
     "selectVariant": "Select Variant",
-    "relatedProducts": "Related Products"
+    "relatedProducts": "Related Products",
+    "new": "NEW",
+    "save": "Save",
+    "off": "OFF"
+  },
+  "shop": {
+    "title": "Product Store",
+    "description": "Discover our collection of products",
+    "showingProducts": "Showing {{showing}} of {{total}} products",
+    "viewMode": "View mode",
+    "sortBy": "Sort by",
+    "filters": "Product filters",
+    "noProductsFound": "No products found",
+    "tryAdjustFilters": "Try adjusting your filters or search term",
+    "clearFilters": "Clear Filters",
+    "sort": {
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "popular": "Popularity"
+    },
+    "filter": {
+      "priceRange": "Price Range",
+      "categories": "Categories",
+      "applyPriceRange": "Apply price range",
+      "clearAllFilters": "Clear all filters",
+      "minimum": "Minimum (VND)",
+      "maximum": "Maximum (VND)",
+      "closeFilter": "Close filters",
+      "pricePresets": {
+        "under100k": "Under 100K",
+        "100k500k": "100K - 500K",
+        "500k1m": "500K - 1M",
+        "1m5m": "1M - 5M",
+        "5m10m": "5M - 10M",
+        "over10m": "Over 10M"
+      }
+    }
+  },
+  "footer": {
+    "companyDescription": "Your one-stop destination for quality products at affordable prices. We're committed to providing an exceptional shopping experience.",
+    "quickLinks": "Quick Links",
+    "customerService": "Customer Service",
+    "contactUs": "Contact Us",
+    "links": {
+      "home": "Home",
+      "shop": "Shop",
+      "categories": "Categories",
+      "deals": "Deals",
+      "newArrivals": "New Arrivals",
+      "bestSellers": "Best Sellers",
+      "contactUs": "Contact Us",
+      "faqs": "FAQs",
+      "shippingReturns": "Shipping & Returns",
+      "orderTracking": "Order Tracking",
+      "privacyPolicy": "Privacy Policy",
+      "termsConditions": "Terms & Conditions"
+    },
+    "address": "123 Shopping Street, E-commerce City, 10001",
+    "workingHours": {
+      "weekdays": "Mon-Fri: 8AM - 6PM",
+      "weekends": "Sat-Sun: 9AM - 4PM"
+    },
+    "copyright": "All rights reserved."
+  },
+  "categories": {
+    "title": "Browse All Categories",
+    "searchPlaceholder": "Search categories...",
+    "errorLoading": "Error Loading Categories",
+    "errorMessage": "We encountered an error while loading the categories. Please try again later.",
+    "noCategories": "No categories found",
+    "tryDifferentSearch": "Try a different search term",
+    "products": "products",
+    "productsCount": "{{count}} products"
+  },
+  "deals": {
+    "title": "Super Sale - Over 50% OFF",
+    "subtitle": "Discover shocking discounted products with discounts over 50%. Limited time, buy now before it's too late!",
+    "badge": "OVER 50% OFF",
+    "showingProducts": "Showing {{count}} products with over 50% discount",
+    "discoverDeals": "Discover our amazing deals",
+    "errorLoading": "Error loading discounted products",
+    "errorMessage": "An error occurred while loading the list of discounted products. Please try again later.",
+    "noProducts": "No products with over 50% discount",
+    "comeBackLater": "Please come back later to see new deals",
+    "sortOptions": {
+      "discountDesc": "Highest discount",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "newest": "Newest"
+    },
+    "sortBy": "Sort by"
+  },
+  "about": {
+    "title": "About BadmintonShop",
+    "subtitle": "We're on a mission to provide high-quality products at affordable prices with exceptional customer service.",
+    "sections": {
+      "story": {
+        "title": "Our Story",
+        "paragraph1": "Founded in 2023, BadmintonShop started with a simple idea: make shopping easier, more enjoyable, and accessible to everyone. What began as a small online store has grown into a platform offering thousands of products across multiple categories.",
+        "paragraph2": "Our team is passionate about curating the best products and creating a seamless shopping experience. We carefully select each item in our inventory to ensure it meets our standards for quality, value, and sustainability.",
+        "paragraph3": "As we continue to grow, our commitment to customer satisfaction remains at the heart of everything we do. We're constantly improving our platform, expanding our product range, and finding new ways to delight our customers."
+      },
+      "values": {
+        "title": "Our Values",
+        "quality": {
+          "title": "Quality",
+          "description": "We never compromise on quality. Every product we offer is carefully selected and tested to ensure it meets our high standards."
+        },
+        "customerFirst": {
+          "title": "Customer First",
+          "description": "Our customers are at the center of everything we do. We strive to provide exceptional service and support at every step of your shopping journey."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We're constantly looking for new ways to improve our platform and offer innovative products that make your life better and more convenient."
+        }
+      },
+      "team": {
+        "title": "Our Team"
+      },
+      "cta": {
+        "title": "Ready to Start Shopping?",
+        "description": "Explore our wide range of products and discover why thousands of customers choose BadmintonShop for their shopping needs.",
+        "browseProducts": "Browse Products",
+        "contactUs": "Contact Us"
+      }
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "personalInfo": "Personal Information",
+    "editProfile": "Edit Profile",
+    "changePassword": "Change Password",
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password"
+    },
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "currentPasswordRequired": "Current password is required to change password",
+      "newPasswordRequired": "New password is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "confirmPasswordRequired": "Please confirm your new password",
+      "passwordsNotMatch": "Passwords do not match"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "saveChanges": "Save Changes",
+      "saving": "Saving..."
+    },
+    "messages": {
+      "profileUpdated": "Profile updated successfully",
+      "passwordChanged": "Password changed successfully",
+      "updateFailed": "Failed to update profile"
+    }
   },
   "common": {
     "tryAgain": "Try Again",

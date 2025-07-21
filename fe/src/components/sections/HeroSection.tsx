@@ -15,7 +15,7 @@ const HERO_SLIDES = [
   {
     id: 1,
     image:
-      'https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      'https://cdn.shopvnb.com/img/1920x640/uploads/slider/astrox88-sd-key-visual-2880x1120-_1718650445.webp',
     titleKey: 'homepage.hero.slides.shopping.title',
     subtitleKey: 'homepage.hero.slides.shopping.subtitle',
     badgeKey: 'homepage.hero.slides.shopping.badge',
@@ -23,7 +23,7 @@ const HERO_SLIDES = [
   {
     id: 2,
     image:
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      'https://cdn.shopvnb.com/img/1920x640/uploads/slider/1000z-launch-website-banner_1695177885.webp',
     titleKey: 'homepage.hero.slides.fashion.title',
     subtitleKey: 'homepage.hero.slides.fashion.subtitle',
     badgeKey: 'homepage.hero.slides.fashion.badge',
@@ -31,7 +31,7 @@ const HERO_SLIDES = [
   {
     id: 3,
     image:
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80',
+      'https://cdn.shopvnb.com/img/1920x640/uploads/slider/65z3ltd-launch-website_1695177820.webp',
     titleKey: 'homepage.hero.slides.technology.title',
     subtitleKey: 'homepage.hero.slides.technology.subtitle',
     badgeKey: 'homepage.hero.slides.technology.badge',

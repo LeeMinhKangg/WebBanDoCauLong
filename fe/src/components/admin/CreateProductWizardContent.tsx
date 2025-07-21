@@ -225,10 +225,7 @@ const CreateProductWizardContent: React.FC<CreateProductWizardContentProps> = ({
               message.error('Tên sản phẩm không được để trống');
               return;
             }
-            if (!currentValues.sku || !currentValues.sku.trim()) {
-              message.error('Mã SKU không được để trống');
-              return;
-            }
+            // SKU là tùy chọn, backend sẽ tự động tạo nếu để trống
             if (
               !currentValues.shortDescription ||
               !currentValues.shortDescription.trim()
@@ -312,7 +309,7 @@ const CreateProductWizardContent: React.FC<CreateProductWizardContentProps> = ({
   const getFieldsForStep = (step: number): string[] => {
     switch (step) {
       case 0: // Basic Info
-        return ['name', 'sku', 'shortDescription', 'description'];
+        return ['name', 'shortDescription', 'description'];
       case 1: // Pricing
         return ['price', 'stock'];
       case 2: // Categories
@@ -378,11 +375,7 @@ const CreateProductWizardContent: React.FC<CreateProductWizardContentProps> = ({
         return;
       }
 
-      if (!combinedValues.sku || !combinedValues.sku.trim()) {
-        message.error('Mã SKU không được để trống');
-        setCurrentStep(0);
-        return;
-      }
+      // SKU là tùy chọn, backend sẽ tự động tạo nếu để trống
 
       if (
         !combinedValues.shortDescription ||
@@ -641,9 +634,9 @@ const CreateProductWizardContent: React.FC<CreateProductWizardContentProps> = ({
                 <Form.Item
                   name="sku"
                   label="Mã SKU"
-                  rules={[{ required: true, message: 'Vui lòng nhập mã SKU' }]}
+                  rules={[]}
                 >
-                  <Input placeholder="Nhập mã SKU" />
+                  <Input placeholder="Để trống để tự động tạo mã SKU" />
                 </Form.Item>
               </Col>
               <Col span={12}>

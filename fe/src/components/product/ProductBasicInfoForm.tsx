@@ -28,7 +28,7 @@ const ProductBasicInfoForm: React.FC<ProductBasicInfoFormProps> = ({
         <Form.Item
           name="sku"
           label="Mã sản phẩm (SKU)"
-          rules={[{ required: true, message: 'Vui lòng nhập mã sản phẩm!' }]}
+          rules={[]}
         >
           <Input placeholder="Nhập mã sản phẩm hoặc để trống để tự tạo" />
         </Form.Item>

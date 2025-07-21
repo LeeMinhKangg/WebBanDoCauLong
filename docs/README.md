@@ -153,8 +153,8 @@ Xem hướng dẫn xử lý sự cố trong [INSTALLATION_GUIDE.md](./INSTALLATI
 
 ## 📞 Hỗ Trợ
 
-- Email: dunglvdeveloper@gmail.com
-- Telegram: @dungvietle
+- Email: leeminhkang@gmail.com
+- FaceBook: LE Minh Khang(kang)
 
 ---
 

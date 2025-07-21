@@ -167,3 +167,6 @@
 2025-07-21T12:33:16.234Z info: ADMIN_PRODUCT_ACTION
 2025-07-21T14:37:11.088Z info: ADMIN_PRODUCT_ACTION
 2025-07-21T14:45:24.479Z info: ADMIN_PRODUCT_ACTION
+2025-07-22 00:33:12 info: Database connection has been established successfully.
+2025-07-22 00:33:12 info: ✅ stripe_customer_id column ensured
+2025-07-22 00:33:12 info: Server running in development mode on port 8888
